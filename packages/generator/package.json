@@ -1,0 +1,17 @@
+{
+  "name": "@codelift/generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.json --outDir dist",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "test": "pnpm build && node --test"
+  },
+  "dependencies": {
+    "@codelift/analyzer": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0"
+  }
+}
